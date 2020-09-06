@@ -1,0 +1,52 @@
+.progress-bar {
+	position: fixed;
+	left: 20px;
+	top: 148px;
+	display: flex;
+	align-items: stretch;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.4s;
+}
+.progress-bar.active {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.4s;
+}
+
+.progress-bar__line {
+	background: #9FB2B1;
+	width: 2px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.progress-bar__line span {
+	position: absolute;
+	background: #1254B5;
+	width: 2px;
+	top: 0;
+	transition: top 0.4s;
+}
+
+.progress-bar__line.active span {
+	transition: top 0.4s;
+}
+
+.progress-bar__list {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.progress-bar__list a {
+	font-size: 12px;
+	line-height: 15px;
+	color: #9FB2B1;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+
+.progress-bar__list a.active {
+	color: #1254B5;
+}
+

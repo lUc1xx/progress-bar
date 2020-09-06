@@ -1,0 +1,43 @@
+.progress-bar
+	position: fixed
+	left: 20px
+	top: 148px
+	display: flex
+	align-items: stretch
+	visibility: hidden
+	opacity: 0
+	transition: all $as
+	&.active
+		visibility: visible
+		opacity: 1
+		transition: all $as
+	&__line
+		background: #9FB2B1
+		width: 2px
+		position: relative
+		margin-right: 20px
+		span
+			position: absolute
+			background: #1254B5
+			width: 2px
+			top: 0
+			transition: top $as
+
+		&.active
+			span
+				transition: top $as
+
+
+	&__list
+		display: flex
+		flex-flow: column nowrap
+		justify-content: space-between
+		a
+			font-size: 12px
+			line-height: 15px
+			color: #9FB2B1	
+			margin-bottom: 35px
+			margin-top: 35px
+
+			&.active
+				color: #1254B5
