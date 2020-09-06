@@ -10,8 +10,8 @@ npm i jquery
 ```sh
 npm i is-in-viewport
 ```
-3. Склонировать к себе в проект файл Progress-Bar
-4. Сделать import или подключить файл напрямую, например
+3. Склонировать к себе в проект файл progress-bar.js
+4. Сделать import или подключить файл progress-bar.js напрямую, например
 ```js
 import { ProgressBar } from "./progress-bar.js";
 ```
@@ -23,7 +23,7 @@ import { ProgressBar } from "./progress-bar.js";
 ```
 где BLOCK_ID - задайте любое значение, нужен для инициализация плагина
 
-6. Добавить CSS или SASS файл к себе в проект
+6. Добавить progress-bar.css или progress-bar.sass файл к себе в проект
 7. Иниацилизировать плагин, код:
 ```js
  
@@ -34,23 +34,23 @@ const progressBar = new ProgressBar('#progress-bar', { // BLOCK_ID
 	items: [
 		{
 			'positionProgress': 1, // позиция анимационной линии 
-			'blockId': 			'#steps', // id блока к которому привязан элемент в Progress bar
- 			'text': 			'Этапы <br> реализации' // текст элемента в Progress bar
+			'blockId': '#steps', // id блока к которому привязан элемент в Progress bar
+ 			'text': 'Этапы <br> реализации' // текст элемента в Progress bar
 		},
 		{
 			'positionProgress': 2,
-			'blockId': 			'#costs',
-			'text': 			'Итоговая <br> стоимость'
+			'blockId': '#costs',
+			'text': 'Итоговая <br> стоимость'
 		},
 		{
 			'positionProgress': 3,
-			'blockId': 			'#reasons',
-			'text': 			'5 причин <br> выбрать <br>нас'
+			'blockId': '#reasons',
+			'text': '5 причин <br> выбрать <br>нас'
 		},
 		{
 			'positionProgress': 4,
-			'blockId': 			'#how',
-			'text': 			'С чего <br> начать?'
+			'blockId': '#how',
+			'text': 'С чего <br> начать?'
 		},
 	],
 })
